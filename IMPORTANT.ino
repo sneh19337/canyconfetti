@@ -29,7 +29,7 @@ void loop() {
   Serial.println("0");
   //Serial.println(F("RunFunction; mediaplayer.play:snd.wav;"));
  // delay(1000);
- // digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
+ digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);  
   digitalWrite(2, LOW);  // wait for a second
       // turn the LED off by making the voltage LOW
