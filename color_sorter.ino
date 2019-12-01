@@ -1,6 +1,6 @@
-/*     Arduino Project - Color Sorting Machine
+/*     Color Sorter - rgb
  *
- *  by Dejan Nedelkovski, www.HowToMechatronics.com
+ *  reference: www.HowToMechatronics.com
  *
  */
 #include <Servo.h>
@@ -116,7 +116,7 @@ int readColor() {
   Serial.print(frequency);//printing RED color frequency
   Serial.println("  ");
   delay(50);
-  G=G-60;
+  G=G-60; //otherwise always showing green
   
   int AD= min(R,G);
   int A=min(AD,B);
